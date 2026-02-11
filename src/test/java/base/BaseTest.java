@@ -8,6 +8,7 @@ import org.testng.annotations.AfterSuite;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
+import Driver.DriverFactory;
 import utils.ConfigReader;
 import utils.ExtentManager;
 
@@ -16,7 +17,7 @@ public class BaseTest {
     protected WebDriver driver;
     protected static ExtentReports extent;
     protected ExtentTest test;
-
+    
     @BeforeMethod
     public void setUp() {
         extent = ExtentManager.getExtent();
